@@ -18,12 +18,12 @@ public class GreetingController {
                 String.format(template, name));
     }
 
-    /*@RequestMapping("/greetings")
+    @RequestMapping("/greetings")
     public List<Greeting> greetings(@RequestParam(value="name", defaultValue="World") String name) {
         Greeting greeting = new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
         Greeting secondGreeting = new Greeting(counter.incrementAndGet(),
                 String.format(template, "World Again"));
         return Arrays.asList(greeting, secondGreeting);
-    }*/
+    }
 }
